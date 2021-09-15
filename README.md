@@ -1,1 +1,1 @@
-# rsschool-cv
+https://miardo.github.io/rsschool-cv/
