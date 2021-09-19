@@ -6,88 +6,123 @@
         <title>CV</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./normalize.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body class="root">
     <header class="header">
         <img class="header__avatar" src="./images/avatarka.jpg" alt="Аватарка">
         <div class="header__about">
-            <h1 class="header__name">Marat Karimov</h1>
-            <ul class="header__list">
-                <li class="header__list-text">email: <a class="header__link" href="mailto:marat.karimov@icloud.com">marat.karimov@icloud.com</a></li>
-                <li class="header__list-text">tg: <a class="header__link" href="https://t.me/Miardo">@Miardo</a></li>
-            </ul>
+            <h1 class="header__name">MARAT KARIMOV</h1>
+            <h3 class="header__about-text">Front-end web developer</h3>
         </div>
+        <ul class="header__menu">
+            <li class="header__menu-text"><a class="header__menu-link" href="#about-me">ABOUT ME</a></li>
+            <li class="header__menu-text"><a class="header__menu-link" href="#work-experience">WORK EXPERIENCE</a></li>
+            <li class="header__menu-text"><a class="header__menu-link" href="#education">EDUCATIONE</a></li>
+            <li class="header__menu-text"><a class="header__menu-link" href="#english">ENGLISH</a></li>
+            <li class="header__menu-text"><a class="header__menu-link" href="#contact">CONTACT</a></li>
+            <li class="header__menu-text"><a class="header__menu-link" href="#technology-stack">TECHNOLOGY STACK</a></li>
+            <li class="header__menu-text"><a class="header__menu-link" href="#projects">PROJECTS</a></li>
+            <li class="header__menu-text"><a class="header__menu-link" href="#code">CODE</a></li>
+        </ul>
+        <button class="header__menu-button"></button>
     </header>
     <main class="main">
-        <h3 class="main__title">About me</h3>
-        <p class="main__text">In Web development, you are attracted by the freedom of creativity, the ability to create and implement your own projects. While still a student, he began to get interested in the topic of web development on his own. 
-            He rewrote website templates for his projects, blogged on WordPress and forums in PHP. After graduation, I completely switched to work in my specialty and had to forget about my passion for web development. In 2020, I completely rethought my values and plans for the future.</p>
-        
-        <h3 class="main__title">Technology stack</h3>
-        <p class="main__text">HTML, CSS, JS, REACT, GIT, BEM</p>
-        
-        <h3 class="main__title">Work experience</h3>
-        <ul class="main__list">
-            <li class="main__list-text">Bank VTB (From 2015 to the present day).</li>
-            <li class="main__list-text">The Central Bank of the Russian Federation (From 2006 to 2014).</li>
-        </ul>
-        
-        <p class="main__text">Now I am studying at Yandex.Praktikum and in parallel I am passing a simulator from the html Academy on the topic of Web development. 
-            I read Kyle Simpson's book "You don't Know JS", listen to thematic podcasts. I try to take part in meetups and conferences for Junior front-end developers.</p>
-        
-        <h3 class="main__title">Projects:</h3>
-        <ul class="main__list">
-            <li class="main__list-text">Project - <a href="https://github.com/miardo/how-to-learn">How to learn</a> (HTML, CSS)</li>
-        </ul>
-        <p class="main__text">Educational project work. The main features are animation via CSS and layout using flexboxes.</p>
-        
-        <ul class="main__list">
-            <li class="main__list-text">Project - <a href="https://github.com/miardo/russian-travel">Russian travel</a> (HTML, CSS)</li>
-        </ul>
-        <p class="main__text">Educational project work. Main features - the project is compiled based on the layout placed in FIGMa. 
-            The project has implemented adaptive layout, flexboxes and grids are used, local fonts are connected.</p>
-        
-        <ul class="main__list">
-            <li class="main__list-text">Project - <a href="https://github.com/miardo/mesto">Mesto</a> (HTML, CSS, JS)</li>
-        </ul>
-        <p class="main__text">Educational project work. Main features - the project is compiled based on the layout placed in FIGMa. 
-            The project has implemented adaptive layout, flexboxes and grids are used, local fonts are connected. Using JS, the popup form for editing a profile, adding a card and opening 
-            a window in full screen is implemented (when you press esc or click outside the main window, the popup closes). When filling in the information, the data is validated. Likes are placed and removed. 
-            You can delete the card. Validation and generation of cards are output in separate files (implemented OOP).</p>
-        
-        <p class="main__text">All project works are checked by mentors and passed a code review.</p>
-
-        <h3 class="main__title">Code</h3>
-
-        <p class="main__text main__text_code">
-        function stray(numbers) {
-            let num = 0;
-            if (numbers[0] === numbers[1]) {
-            num = numbers[0];
-            } else if (numbers[0] != numbers[1]) {
-            num = numbers[2];
-            }
-            for (let i = 0; i <= numbers.length; i++) {
-            if (numbers[i] != num)
-                return numbers[i]
-            }
-        }
-        </p>
-        
-        <h3 class="main__title">Education</h3>
-        <ul class="main__list">
-            <li class="main__list-text">Yandex.Praktikum (Web Developer)</li>
-            <li class="main__list-text">Higher Economic Education (Finance and Credit)</li>
-        </ul>
-        
-        <h3 class="main__title">English</h3>
-        <ul class="main__list">
-            <li class="main__list-text">A2</li>
-        </ul>
+        <div class="main-place">
+            <article class="places">
+                <h3 class="places__title" id="about-me">ABOUT ME</h3>
+                <p class="places__text">In Web development, you are attracted by the freedom of creativity, the ability to create and implement your own projects. While still a student, he began to get interested in the topic of web development on his own. 
+                    He rewrote website templates for his projects, blogged on WordPress and forums in PHP. After graduation, I completely switched to work in my specialty and had to forget about my passion for web development. In 2020, I completely rethought my values and plans for the future.</p>
+            </article>       
+            <article class="places">
+                <h3 class="places__title" id="work-experience">WORK EXPERIENCE</h3>
+                    <ul class="places__list">
+                        <li class="places__list-text">Bank VTB (From 2015 to the present day).</li>
+                        <li class="places__list-text">The Central Bank of the Russian Federation (From 2006 to 2014).</li>
+                    </ul>
+                    <p class="places__text">Now I am studying at Yandex.Praktikum and in parallel I am passing a simulator from the html Academy on the topic of Web development. 
+                        I read Kyle Simpson's book "You don't Know JS", listen to thematic podcasts. I try to take part in meetups and conferences for Junior front-end developers.</p>
+                </article>
+                <article class="places">
+                    <h3 class="places__title" id="education">EDUCATION</h3>
+                    <ul class="places__list">
+                        <li class="places__list-text">Yandex.Praktikum (Web Developer)</li>
+                        <li class="places__list-text">Higher Economic Education (Finance and Credit)</li>
+                    </ul>
+                </article>
+                <article class="places">
+                    <h3 class="places__title" id="english">ENGLISH</h3>
+                    <ul class="places__list">
+                        <li class="places__list-text">A2</li>
+                    </ul>
+                </article>         
+                <article class="places">
+                    <h3 class="places__title" id="contact">CONTACT</h3>
+                    <ul class="places__list">
+                        <li class="places__list-text">email: <a class="places__list" href="mailto:marat.karimov@icloud.com">marat.karimov@icloud.com</a></li>
+                        <li class="places__list-text">tg: <a class="places__list" href="https://t.me/Miardo">@Miardo</a></li>
+                    </ul>
+                </article>          
+        </div>
+        <div class="main-place">
+            <article class="places">
+                <h3 class="places__title" id="technology-stack">TECHNOLOGY STACK</h3>
+                <p class="places__text">HTML, CSS, JS, REACT, GIT, BEM</p>
+            </article>
+            <article class="places">
+                <h3 class="places__title" id="projects">PROJECTS:</h3>
+                <article class="places-project">
+                    <a class="places__link" target="_blank" href="https://github.com/miardo/how-to-learn"><img class="places__img" src="./images/learn.jpg" alt="How to learn"></a>
+                    <h4 class="places__text">Project - <a class="places__link" href="https://github.com/miardo/how-to-learn">How to learn</a> (HTML, CSS)</h4>
+                    <p class="places__text">Educational project work. The places features are animation via CSS and layout using flexboxes.</p>
+                </article>
+                <article class="places-project">
+                <a class="places__link" target="_blank" href="https://github.com/miardo/russian-travel"><img class="places__img" src="./images/travel.jpg" alt="Russian travel"></a>
+                <h4 class="places__text">Project - <a class="places__list-link" href="https://github.com/miardo/russian-travel">Russian travel</a> (HTML, CSS)</h4>
+                <p class="places__text">Educational project work. The project is compiled based on the layout placed in FIGMa. 
+                        The project has implemented adaptive layout, flexboxes and grids are used, local fonts are connected.</p>
+                </article>
+                <article class="places-project">
+                <a class="places__link" target="_blank" href="hhttps://github.com/miardo/mesto"><img class="places__img" src="./images/mesto.jpg" alt="Mesto"></a>
+                <h4 class="places__text">Project - <a class="places__list-link" href="https://github.com/miardo/mesto">Mesto</a> (HTML, CSS, JS)</h4>
+                <p class="places__text">Educational project work. The project is compiled based on the layout placed in FIGMa. 
+                        The project has implemented adaptive layout, flexboxes and grids are used, local fonts are connected. Using JS, the popup form for editing a profile, adding a card and opening 
+                        a window in full screen is implemented (when you press esc or click outside the places window, the popup closes). When filling in the information, the data is validated. Likes are placed and removed. 
+                        You can delete the card. Validation and generation of cards are output in separate files (implemented OOP).</p>
+                </article>
+                <p class="places__text">All project works are checked by mentors and passed a code review.</p>
+            </article>
+            <article class="places">
+                <h3 class="places__title" id="code">CODE</h3>
+                <pre class="places__text places__text_code"><code class="js">
+                        function stray(numbers) {
+                            let num = 0;
+                            if (numbers[0] === numbers[1]) {
+                                num = numbers[0];
+                            } else if (numbers[0] != numbers[1]) {
+                                num = numbers[2];
+                            }
+                            for (let i = 0; i &lt;= numbers.length; i++) {
+                                if (numbers[i] != num)
+                                    return numbers[i]
+                            }
+                        }
+                </code>
+                </pre>
+            </article>
+        </div>
     </main>
     <footer class="footer">
-        <p class="footer__text" ><a class="footer__link" href="https://github.com/miardo">Мой github</a> 2021</p> <a class="footer__link" href="https://rs.school/js/"><img class="footer__img" src="https://rs.school/images/rs_school_js.svg" alt="Логотип школы"></a>
+        <p class="footer__text" >© 2021 by Marat Karimov</p> 
+        <ul class="footer__links">
+            <li class="footer__link"><a class="footer__link-text" href="https://github.com/miardo">GitHub</a></li>
+            <li class="footer__link"><a class="footer__link-img" href="https://rs.school/js/"><img class="footer__img" src="https://rs.school/images/rs_school_js.svg" alt="Логотип школы"></a></li>
+        </ul>
     </footer>
+    <script src="./script.js"></script>
     </body>
 </html>
